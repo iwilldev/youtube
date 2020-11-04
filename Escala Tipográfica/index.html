@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Orienta&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Sistema Tipográfico Responsivo</title>
+</head>
+<body>
+    <p id="window-width"></p>
+    <h1>Título do artigo</h1>
+    <h2>Aqui você inclui um subtítulo maroto dando mais detalhes</h2>
+    <p>
+        Aliquam ut interdum dolor. Mauris feugiat odio eget dolor congue auctor. Maecenas luctus ultrices nibh vel cursus. Sed in dictum diam. Pellentesque id placerat tellus. In hac habitasse platea dictumst. Curabitur id felis nisl. Nunc enim neque, consequat vitae sapien eu, hendrerit pulvinar ante. Cras ut sodales nunc, sit amet pharetra mi. Vestibulum quis diam nisi. Etiam in aliquet diam. Fusce et consectetur lorem. Curabitur pellentesque vitae dolor vel pulvinar. Cras rutrum sit amet dui posuere euismod. Duis felis eros, finibus sed nisl in, commodo suscipit ligula. Phasellus lobortis velit nec vehicula fermentum.
+    </p>
+    <p>
+        Pellentesque felis libero, sodales vel diam ac, condimentum vestibulum velit. Praesent blandit fermentum mollis. Sed efficitur sagittis porttitor. Ut et velit sed orci sollicitudin bibendum vel in massa. Vestibulum mollis consectetur ultricies. Mauris dapibus, mauris vel pulvinar ullamcorper, nunc lectus tempor magna, sit amet commodo lorem sapien et tellus. Pellentesque dictum sem et ipsum maximus, mattis fringilla est sodales. Maecenas bibendum dui tristique, vestibulum erat nec, gravida nibh. Morbi posuere cursus nulla tristique ultrices. Pellentesque lobortis, felis vitae sollicitudin ornare, dolor purus condimentum neque, id aliquam nunc velit a urna. Suspendisse ipsum nisl, fringilla vel lorem ac, tempor pharetra ante.
+    </p>
+    <p>
+        Phasellus in urna rhoncus, scelerisque enim at, pulvinar lorem. Mauris ac orci venenatis, porttitor ligula ut, fermentum risus. Phasellus pharetra ipsum in erat tincidunt convallis. Nullam pulvinar, libero et suscipit aliquet, diam lorem vestibulum sem, quis eleifend ligula purus non turpis. Maecenas condimentum lectus et ex euismod, a fringilla turpis blandit. Fusce ligula sem, sodales vel dapibus at, mollis non tellus. Duis quam leo, convallis ut lacus nec, sagittis lacinia nibh.
+    </p>
+    <h3>Título da seção do texto</h3>
+    <h4>Aqui você dá maiores detalhes sobre a seção.</h4>
+    <p>
+        Proin vel fringilla tortor. Nulla tincidunt felis et arcu convallis lobortis. Maecenas sit amet felis sed dolor mattis ultrices. Etiam id imperdiet tellus. Mauris a lobortis risus. Ut quis ullamcorper metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin cursus malesuada nunc, nec porta urna egestas non. Nulla pulvinar non risus in consequat. Donec massa augue, dapibus a sollicitudin vel, pulvinar id erat. Suspendisse nec odio dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tellus justo, finibus ut arcu vel, gravida pulvinar eros. Quisque id lorem aliquam, elementum dui ac, mattis ante. Ut ut pellentesque risus, a tincidunt purus. Integer molestie ligula vitae urna tempus pretium.
+    </p>
+    <p>
+        Etiam fringilla ultricies erat. Duis ac condimentum augue. Etiam porttitor condimentum tortor, id feugiat enim cursus vel. Sed commodo vehicula nisl id volutpat. Vestibulum egestas ac risus quis egestas. In hendrerit turpis eget felis mollis fringilla. Nam tincidunt ipsum id magna pulvinar vulputate. Aliquam vel elit eget enim volutpat pulvinar. Integer mattis porta augue, quis egestas enim pretium quis. Nullam eget consectetur odio. Aenean dui felis, molestie quis malesuada nec, euismod eu erat. Phasellus lacinia a turpis ut varius.
+    </p>
+    <p>
+        Integer erat dolor, condimentum in auctor sit amet, porta vel lectus. Quisque facilisis nunc eget risus iaculis varius. Aenean vehicula luctus lectus condimentum porta. Pellentesque vitae arcu quis erat hendrerit consequat. Pellentesque congue efficitur augue in elementum. Nunc ac interdum urna. Praesent non sem mauris. Nunc felis velit, mattis non rhoncus nec, ornare a nisi. Donec interdum augue nec vestibulum fringilla. Donec maximus mi eget viverra ornare. In sollicitudin ligula dolor, vitae semper nibh condimentum ut. Aliquam erat volutpat. In elit nunc, fringilla sit amet vulputate cursus, tempus tempus dui. Aenean sit amet viverra mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+    </p>
+    <script>
+        function showSizes() {
+            let viewportWidth = window.innerWidth;
+            let fontSize = 10 + (viewportWidth / 100);
+            let baseFontSize = () => {
+                if (fontSize <= 14) {
+                    return 14;
+                } else if (fontSize >= 22) {
+                    return 22
+                } else {
+                    return fontSize;
+                }
+            }
+            document.getElementById("window-width").innerHTML = 'Largura: ' + viewportWidth + 'px - Fonte: ' + baseFontSize() + 'px';
+        }
+        window.addEventListener("resize", showSizes);
+    </script>
+</body>
+</html>
