@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem;
+}
+
+.flex-item {
+    height: 80px;
+    width: 120px;
+    background: crimson;
+    color: #f0f0f0;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    border: 1px solid #f0f0f0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-container {
+
+    background: #c0c0c0;
+    width: 100%;
+    max-width: 1000px;
+    height: 400px;
+    display: flex;
+
+    /* FLEX-DIRECTION: DETERMINA A DIREÇÃO DO EIXO PRINCIPAL DO FLEX-CONTAINER */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+
+    /* ALIGN-ITEMS: ALINHA OS ITEMS NO EIXO PERPENDICULAR A DIREÇÃO DO FLEX */
+    /* align-items: center; */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: baseline; */
+
+    /* JUSTIFY-CONTENT: JUSTIFICA OS ITEMS NO EIXO PRINCIPAL DO FLEX-CONTAINER  */
+    /* justify-content: center; */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    
+    /* FLEX-WRAP: HABILITA, OU NÃO, A QUEBRA DE LINHA NO FLEX, CASO NECESSÁRIA */
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+
+    /* FLEX-FLOW: SHORTHAND PARA AS PROPRIEDADES FLEX-DIRECTION E FLEX-WRAP */
+    /* flex-flow: row wrap; */
+
+    /* ALIGN-CONTENT: ALINHA AS LINHAS DO FLEX, QUANDO O FLEX-WRAP ESTÁ SENDO UTILIZADO */
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    /* align-content: center; */
+    /* align-content: space-between; */
+    /* align-content: space-around; */
+}
+
+.flex-item {
+    /* flex-grow: 1; */
+    /* flex-basis: 250px; */
+    /* flex-shrink: 1; */
+}
+
+.flex-container .flex-item#one {
+
+    /* FLEX-GROW: CAPACIDADE DO ITEM CRESCER NO FLEX-CONTAINER */
+    /* flex-grow: 1; */
+
+    /* FLEX-BASIS: TAMANHO BASE DO ITEM, ANTES DE SE DISTRIBUIR NO FLEX-CONTAINER */
+    /* flex-basis: 100px; */
+
+    /* FLEX-SHRINK: CAPACIDADE DE REDUÇÃO DO ITEM, BASEADO NO FLEX-BASIS E NA RELAÇÃO COM O FLEX-SHRINK DOS OUTROS ITENS */
+    /* flex-shrink: 1;  */
+    /* Capacidade de redução, baseada na largura do item */
+
+    /* FLEX: SHORTHAND PARA AS ÚLTIMAS TRÊS PROPRIEDADES - GROW (1) SHRINK (1) BASIS (0) - FLEX: 1 FAZ O ITEM SE DISTRIBUIR EM TODO O ESPAÇO RESTANTE */
+    /* flex: 1; */
+    
+    /* ORDER: DEFINE A POSIÇÃO DO ITEM NA "FILA" DO FLEX-CONTAINER. VALOR DEFAULT É ZERO */
+    /* order: 1; */
+
+    /* ALIGN-SELF: ALINHA O ITEM NO EIXO PERPENDICULAR AO EIXO PRINCIPAL */
+    /* align-self: auto; */
+    /* align-self: baseline; */
+    /* align-self: flex-start; */
+    /* align-self: flex-end; */
+    /* align-self: center; */
+    /* align-self: stretch; */
+
+}
+
+.flex-container .flex-item#four {
+    /* order: -1; */
+}
+
+
+
+
+
